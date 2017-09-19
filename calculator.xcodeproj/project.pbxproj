@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8455EAB1F71A22F003FC8FB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8455EAA1F71A22F003FC8FB /* RoundButton.swift */; };
+		F8455EAD1F71A49B003FC8FB /* RoundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8455EAC1F71A49B003FC8FB /* RoundLabel.swift */; };
 		F8D18EF31F6B0C9000A48DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D18EF21F6B0C9000A48DB5 /* AppDelegate.swift */; };
 		F8D18EF51F6B0C9000A48DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D18EF41F6B0C9000A48DB5 /* ViewController.swift */; };
 		F8D18EF81F6B0C9000A48DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D18EF61F6B0C9000A48DB5 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8455EAA1F71A22F003FC8FB /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F8455EAC1F71A49B003FC8FB /* RoundLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundLabel.swift; sourceTree = "<group>"; };
 		F8D18EEF1F6B0C9000A48DB5 /* calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D18EF21F6B0C9000A48DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D18EF41F6B0C9000A48DB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +41,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F8455EA71F7192C7003FC8FB /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resourses;
+			sourceTree = "<group>";
+		};
 		F8D18EE61F6B0C9000A48DB5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +67,7 @@
 		F8D18EF11F6B0C9000A48DB5 /* calculator */ = {
 			isa = PBXGroup;
 			children = (
+				F8455EA71F7192C7003FC8FB /* Resourses */,
 				F8D18EF21F6B0C9000A48DB5 /* AppDelegate.swift */,
 				F8D18EF41F6B0C9000A48DB5 /* ViewController.swift */,
 				F8D18EF61F6B0C9000A48DB5 /* Main.storyboard */,
@@ -63,6 +75,8 @@
 				F8D18EFE1F6B0C9000A48DB5 /* LaunchScreen.storyboard */,
 				F8D18F011F6B0C9000A48DB5 /* Info.plist */,
 				F8D18EF91F6B0C9000A48DB5 /* calculator.xcdatamodeld */,
+				F8455EAA1F71A22F003FC8FB /* RoundButton.swift */,
+				F8455EAC1F71A49B003FC8FB /* RoundLabel.swift */,
 			);
 			path = calculator;
 			sourceTree = "<group>";
@@ -140,8 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8455EAB1F71A22F003FC8FB /* RoundButton.swift in Sources */,
 				F8D18EF51F6B0C9000A48DB5 /* ViewController.swift in Sources */,
 				F8D18EFB1F6B0C9000A48DB5 /* calculator.xcdatamodeld in Sources */,
+				F8455EAD1F71A49B003FC8FB /* RoundLabel.swift in Sources */,
 				F8D18EF31F6B0C9000A48DB5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +322,7 @@
 				F8D18F061F6B0C9000A48DB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
