@@ -77,7 +77,7 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                         </variation>
                                                         <connections>
-                                                            <action selector="countResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zx3-Pz-r7P"/>
+                                                            <action selector="pressResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEy-cU-rYT"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpD-eX-Mxq" customClass="RoundButton" customModule="calculator">
@@ -102,7 +102,7 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                         </variation>
                                                         <connections>
-                                                            <action selector="countResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TOQ-xj-cgn"/>
+                                                            <action selector="symbolOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UHL-CZ-dTs"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mW-H2-Dji" customClass="RoundButton" customModule="calculator">
@@ -127,7 +127,7 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                         </variation>
                                                         <connections>
-                                                            <action selector="countResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BSm-DJ-A8m"/>
+                                                            <action selector="symbolOperation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8r9-2E-wVo"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVb-mQ-ZaB" customClass="RoundButton" customModule="calculator">
@@ -154,7 +154,7 @@
                                                             <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                                         </variation>
                                                         <connections>
-                                                            <action selector="countResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WFY-js-90X"/>
+                                                            <action selector="mathPerforming:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qxb-hf-1ty"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -258,6 +258,9 @@
                                                         <variation key="heightClass=regular-widthClass=regular">
                                                             <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                                         </variation>
+                                                        <connections>
+                                                            <action selector="mathPerforming:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zZm-WE-auR"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -360,6 +363,9 @@
                                                         <variation key="heightClass=regular-widthClass=regular">
                                                             <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                                         </variation>
+                                                        <connections>
+                                                            <action selector="mathPerforming:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QOx-wX-W04"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -462,6 +468,9 @@
                                                         <variation key="heightClass=regular-widthClass=regular">
                                                             <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                                         </variation>
+                                                        <connections>
+                                                            <action selector="mathPerforming:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rz2-6K-zee"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -518,7 +527,7 @@
                                                                     <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                                                 </variation>
                                                                 <connections>
-                                                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4e2-36-H3w"/>
+                                                                    <action selector="dotButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8GZ-P6-4Wm"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -544,6 +553,9 @@
                                                         <variation key="heightClass=regular-widthClass=regular">
                                                             <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                                         </variation>
+                                                        <connections>
+                                                            <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LG2-jX-qHW"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -566,7 +578,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-190" y="129.375"/>
+            <point key="canvasLocation" x="-228" y="104"/>
         </scene>
     </scenes>
 </document>
