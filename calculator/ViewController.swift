@@ -3,24 +3,18 @@
   * Date: September 24, 2017
   * StudentID: 300966307
   * Description: Calculator
-  * Version: 0.8 - Adding full functionality
+  * Version: 0.9 - Adding sounds to the buttons
   */
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    /*    override func didReceiveMemoryWarning() {
-     super.didReceiveMemoryWarning()
-     // Dispose of any resources that can be recreated.
-     }
-     */
-    
+    var buttonClickSound : AVAudioPlayer = AVAudioPlayer()
+    var operatorClickSound : AVAudioPlayer = AVAudioPlayer()
+    var resetCLickSound : AVAudioPlayer = AVAudioPlayer()
+    var resultClickSound : AVAudioPlayer = AVAudioPlayer()
     
     var totalResult: Float = 0
     var firstOperand : Float = 0
@@ -30,11 +24,30 @@ class ViewController: UIViewController {
     var equalWasPressed = false
     var errorText = "No no no :)"
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let operandButtonSound =  Bundle.main.path(forResource: "buttonSound", ofType: ".mp3")
+        let operatorButtonSound = Bundle.main.path(forResource: "operatorSound", ofType: ".mp3")
+        let resetButtonSound = Bundle.main.path(forResource: "resetSound", ofType: ".mp3")
+        let resultButtonSound = Bundle.main.path(forResource: "resultSound", ofType: ".mp3")
+
+        do {
+            try buttonClickSound = AVAudioPlayer(contentsOf: URL(fileURLWithPath: operandButtonSound!))
+            try operatorClickSound = AVAudioPlayer(contentsOf: URL(fileURLWithPath: operatorButtonSound!))
+            try resetCLickSound = AVAudioPlayer(contentsOf: URL(fileURLWithPath: resetButtonSound!))
+            try resultClickSound = AVAudioPlayer(contentsOf: URL(fileURLWithPath: resultButtonSound!))
+            
+        }
+        catch {
+            print(error)
+        }
+    }
     
     @IBOutlet weak var screen: UILabel!
     
     
     @IBAction func pressedButton(_ sender: UIButton) {
+        buttonClickSound.play()
         let title = sender.title(for: .selected)!
         if userStartTyping {
             let textOnScreen = screen.text!
@@ -48,6 +61,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func dotButtonPressed(_ sender: UIButton) {
+        buttonClickSound.play()
         if (noErrorsOnTheScreen()) {
             if (screen.text?.contains(".") == false) {
                 screen.text = screen.text! + String(sender.currentTitle!)
@@ -58,12 +72,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressResetButton(_ sender: UIButton) {
+        resetCLickSound.play()
         screen.text = "0"
         reset()
     }
     
     
     @IBAction func symbolOperation(_ sender: UIButton) {
+        resultClickSound.play()
         userStartTyping = false
         if (noErrorsOnTheScreen()){
             let operand = Float(screen.text!)!
@@ -90,6 +106,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func mathPerforming(_ sender: UIButton) {
+        operatorClickSound.play()
         equalWasPressed = false
         userStartTyping = false
         if(noErrorsOnTheScreen()) {
@@ -102,6 +119,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func equalPressed(_ sender: UIButton) {
+        resultClickSound.play()
         if (equalWasPressed == false) {
             if (noErrorsOnTheScreen()){
                 secondOperand = Float(screen.text!)!
