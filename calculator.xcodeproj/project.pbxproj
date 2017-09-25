@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F8455EAB1F71A22F003FC8FB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8455EAA1F71A22F003FC8FB /* RoundButton.swift */; };
 		F8455EAD1F71A49B003FC8FB /* RoundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8455EAC1F71A49B003FC8FB /* RoundLabel.swift */; };
+		F87F02A31F78B0D200A3D3B0 /* 600px-Yogscast_Dwarf_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F87F02A21F78B0D200A3D3B0 /* 600px-Yogscast_Dwarf_Logo.png */; };
+		F87F02A51F78B52600A3D3B0 /* Back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F87F02A41F78B52600A3D3B0 /* Back.jpg */; };
 		F8D18EF31F6B0C9000A48DB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D18EF21F6B0C9000A48DB5 /* AppDelegate.swift */; };
 		F8D18EF51F6B0C9000A48DB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D18EF41F6B0C9000A48DB5 /* ViewController.swift */; };
 		F8D18EF81F6B0C9000A48DB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D18EF61F6B0C9000A48DB5 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		F8455EAA1F71A22F003FC8FB /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		F8455EAC1F71A49B003FC8FB /* RoundLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundLabel.swift; sourceTree = "<group>"; };
+		F87F02A21F78B0D200A3D3B0 /* 600px-Yogscast_Dwarf_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "600px-Yogscast_Dwarf_Logo.png"; path = "../../../../../Downloads/600px-Yogscast_Dwarf_Logo.png"; sourceTree = "<group>"; };
+		F87F02A41F78B52600A3D3B0 /* Back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Back.jpg; path = ../../../../../Downloads/Back.jpg; sourceTree = "<group>"; };
 		F8D18EEF1F6B0C9000A48DB5 /* calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D18EF21F6B0C9000A48DB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D18EF41F6B0C9000A48DB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 				F8D18EF91F6B0C9000A48DB5 /* calculator.xcdatamodeld */,
 				F8455EAA1F71A22F003FC8FB /* RoundButton.swift */,
 				F8455EAC1F71A49B003FC8FB /* RoundLabel.swift */,
+				F87F02A21F78B0D200A3D3B0 /* 600px-Yogscast_Dwarf_Logo.png */,
+				F87F02A41F78B52600A3D3B0 /* Back.jpg */,
 			);
 			path = calculator;
 			sourceTree = "<group>";
@@ -143,7 +149,9 @@
 			files = (
 				F8D18F001F6B0C9000A48DB5 /* LaunchScreen.storyboard in Resources */,
 				F8D18EFD1F6B0C9000A48DB5 /* Assets.xcassets in Resources */,
+				F87F02A51F78B52600A3D3B0 /* Back.jpg in Resources */,
 				F8D18EF81F6B0C9000A48DB5 /* Main.storyboard in Resources */,
+				F87F02A31F78B0D200A3D3B0 /* 600px-Yogscast_Dwarf_Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
