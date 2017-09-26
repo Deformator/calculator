@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80274E01F7A07160037A47D /* 600px-Yogscast_Dwarf_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F80274DE1F7A07160037A47D /* 600px-Yogscast_Dwarf_Logo.png */; };
+		F80274E11F7A07160037A47D /* Back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F80274DF1F7A07160037A47D /* Back.jpg */; };
 		F8455EAB1F71A22F003FC8FB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8455EAA1F71A22F003FC8FB /* RoundButton.swift */; };
 		F8455EAD1F71A49B003FC8FB /* RoundLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8455EAC1F71A49B003FC8FB /* RoundLabel.swift */; };
-		F87F02A31F78B0D200A3D3B0 /* 600px-Yogscast_Dwarf_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F87F02A21F78B0D200A3D3B0 /* 600px-Yogscast_Dwarf_Logo.png */; };
-		F87F02A51F78B52600A3D3B0 /* Back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F87F02A41F78B52600A3D3B0 /* Back.jpg */; };
 		F87F02BB1F78C7B500A3D3B0 /* buttonSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F87F02B81F78C7B500A3D3B0 /* buttonSound.mp3 */; };
 		F87F02BC1F78C7B500A3D3B0 /* operatorSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F87F02B91F78C7B500A3D3B0 /* operatorSound.mp3 */; };
 		F87F02BD1F78C7B500A3D3B0 /* resetSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F87F02BA1F78C7B500A3D3B0 /* resetSound.mp3 */; };
@@ -24,10 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F80274DE1F7A07160037A47D /* 600px-Yogscast_Dwarf_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "600px-Yogscast_Dwarf_Logo.png"; sourceTree = "<group>"; };
+		F80274DF1F7A07160037A47D /* Back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Back.jpg; sourceTree = "<group>"; };
 		F8455EAA1F71A22F003FC8FB /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		F8455EAC1F71A49B003FC8FB /* RoundLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundLabel.swift; sourceTree = "<group>"; };
-		F87F02A21F78B0D200A3D3B0 /* 600px-Yogscast_Dwarf_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "600px-Yogscast_Dwarf_Logo.png"; path = "../../../../../Downloads/600px-Yogscast_Dwarf_Logo.png"; sourceTree = "<group>"; };
-		F87F02A41F78B52600A3D3B0 /* Back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Back.jpg; path = ../../../../../Downloads/Back.jpg; sourceTree = "<group>"; };
 		F87F02B81F78C7B500A3D3B0 /* buttonSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttonSound.mp3; sourceTree = "<group>"; };
 		F87F02B91F78C7B500A3D3B0 /* operatorSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = operatorSound.mp3; sourceTree = "<group>"; };
 		F87F02BA1F78C7B500A3D3B0 /* resetSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = resetSound.mp3; sourceTree = "<group>"; };
@@ -60,6 +60,8 @@
 				F87F02B91F78C7B500A3D3B0 /* operatorSound.mp3 */,
 				F87F02BA1F78C7B500A3D3B0 /* resetSound.mp3 */,
 				F87F02BE1F78C8FC00A3D3B0 /* resultSound.mp3 */,
+				F80274DE1F7A07160037A47D /* 600px-Yogscast_Dwarf_Logo.png */,
+				F80274DF1F7A07160037A47D /* Back.jpg */,
 			);
 			name = Resourses;
 			sourceTree = "<group>";
@@ -93,8 +95,6 @@
 				F8D18EF91F6B0C9000A48DB5 /* calculator.xcdatamodeld */,
 				F8455EAA1F71A22F003FC8FB /* RoundButton.swift */,
 				F8455EAC1F71A49B003FC8FB /* RoundLabel.swift */,
-				F87F02A21F78B0D200A3D3B0 /* 600px-Yogscast_Dwarf_Logo.png */,
-				F87F02A41F78B52600A3D3B0 /* Back.jpg */,
 			);
 			path = calculator;
 			sourceTree = "<group>";
@@ -161,13 +161,13 @@
 			files = (
 				F87F02BD1F78C7B500A3D3B0 /* resetSound.mp3 in Resources */,
 				F8D18F001F6B0C9000A48DB5 /* LaunchScreen.storyboard in Resources */,
+				F80274E11F7A07160037A47D /* Back.jpg in Resources */,
 				F8D18EFD1F6B0C9000A48DB5 /* Assets.xcassets in Resources */,
+				F80274E01F7A07160037A47D /* 600px-Yogscast_Dwarf_Logo.png in Resources */,
 				F87F02BC1F78C7B500A3D3B0 /* operatorSound.mp3 in Resources */,
-				F87F02A51F78B52600A3D3B0 /* Back.jpg in Resources */,
 				F87F02BF1F78C8FC00A3D3B0 /* resultSound.mp3 in Resources */,
 				F8D18EF81F6B0C9000A48DB5 /* Main.storyboard in Resources */,
 				F87F02BB1F78C7B500A3D3B0 /* buttonSound.mp3 in Resources */,
-				F87F02A31F78B0D200A3D3B0 /* 600px-Yogscast_Dwarf_Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

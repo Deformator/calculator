@@ -3,7 +3,7 @@
   * Date: September 24, 2017
   * StudentID: 300966307
   * Description: Calculator
-  * Version: 0.9 - Adding sounds to the buttons
+  * Version: 0.91 - Bug-fix
   */
 
 import UIKit
@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let operandButtonSound =  Bundle.main.path(forResource: "buttonSound", ofType: ".mp3")
         let operatorButtonSound = Bundle.main.path(forResource: "operatorSound", ofType: ".mp3")
         let resetButtonSound = Bundle.main.path(forResource: "resetSound", ofType: ".mp3")
@@ -63,7 +64,9 @@ class ViewController: UIViewController {
     @IBAction func dotButtonPressed(_ sender: UIButton) {
         buttonClickSound.play()
         if (noErrorsOnTheScreen()) {
-            if (screen.text?.contains(".") == false) {
+            if (userStartTyping == true && screen.text?.contains(".") == false) {
+                screen.text = screen.text! + String(sender.currentTitle!)
+            } else if (screen.text == "0"){
                 screen.text = screen.text! + String(sender.currentTitle!)
                 userStartTyping = true
             }
@@ -92,11 +95,11 @@ class ViewController: UIViewController {
                         screen.text = errorText
                         userStartTyping = false
                     } else {
-                        screen.text = String(resultOfOperation)
+                        screen.text = forTailingZero(temp: resultOfOperation)
                     }
                 case "%":
                     let resultOfOperation = operand / 100
-                    screen.text = String(resultOfOperation)
+                    screen.text = forTailingZero(temp: resultOfOperation)
                 default:
                     break
                 }
@@ -153,6 +156,7 @@ class ViewController: UIViewController {
         default:
             break
         }
+        userStartTyping = false
 
     }
     
