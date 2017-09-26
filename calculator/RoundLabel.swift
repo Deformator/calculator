@@ -11,6 +11,7 @@ import UIKit
 @IBDesignable
 class RoundLabel: UILabel {
 
+    //setup "corner radius" attribute for RoundLabel objects to Attribute inspector
     @IBInspectable var cornerRadius : CGFloat = 0 {
         didSet {
             self.adjustsFontSizeToFitWidth = true
